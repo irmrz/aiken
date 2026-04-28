@@ -1,5 +1,6 @@
 import './app.css'
 import { CanvasScrub } from './components/CanvasScrub';
+import { Analytics } from '@vercel/analytics/next';
 
 export function App() {
   return (
@@ -49,6 +50,7 @@ export function App() {
       <section style={{ height: '200vh', background: 'var(--bg-primary)' }}>
         {/* Más contenido */}
       </section>
+      <Analytics />
     </main>
   );
 }
